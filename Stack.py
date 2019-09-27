@@ -1,6 +1,6 @@
 class Stack:
     def __init__(self):
-        self.items = []
+        pass
 
     def isEmpty(self):
         """Returns True if Stack is empty, False otherwise"""
