@@ -18,6 +18,8 @@ class Stack:
     def peek(self):
         """Returns the top item in the stack, but doesn't remove it"""
         return self.data[len(self.data)-1]
+        # henry's way
+        # return self.data[-1]
 
     def size(self):
         """Returns the (int) size of the stack"""
@@ -33,6 +35,11 @@ class Stack:
         for i in range(len(self.data)):
             new_string += self.data[i] + " "
         return new_string
+        # henry's way
+        # stack_string = ""
+        # for i in self.data:
+        #     stack_string += i + ""
+        # return stack_string
         
 
 ### TEST SUITE ###
