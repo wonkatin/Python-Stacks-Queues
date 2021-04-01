@@ -27,6 +27,8 @@ class Queue:
         return ""
 
 
+### TEST SUITE ###
+# Use the following code to help you implement the Queue
 my_queue = Queue()
 
 print('Is Queue empty?', my_queue.isEmpty())
@@ -41,5 +43,3 @@ print('First item:', my_queue.peek())
 
 print('Here are all the items in the queue:', my_queue)
 print('The size of my stack is:', my_queue.size())
-
-# BONUS - Implement the Queue with a Linked List
