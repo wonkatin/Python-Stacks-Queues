@@ -1,30 +1,39 @@
 class Stack:
     def __init__(self):
-        pass
+        self.data = []
 
     def isEmpty(self):
         """Returns True if Stack is empty, False otherwise"""
-        pass
+        return len(self.data) == 0
 
     def push(self, item):
         """Adds an item to the top of stack"""
-        pass
+        self.data.append(item)
+        print(self.data)
 
     def pop(self):
         """Removes the item from the top of stack. Returns the removed item"""
-        pass
+        return self.data.pop()
 
     def peek(self):
         """Returns the top item in the stack, but doesn't remove it"""
-        pass
+        return self.data[len(self.data)-1]
 
     def size(self):
         """Returns the (int) size of the stack"""
-        pass
+        return len(self.data)
 
     def __str__(self):
         """Returns a string representation of all items in stack"""
-        return ''
+        
+        # for item in self.data:
+            # print( f'{item}')
+            # print(str(item))
+        new_string = ""
+        for i in range(len(self.data)):
+            new_string += self.data[i] + " "
+        return new_string
+        
 
 ### TEST SUITE ###
 # Use the following code to help you implement the Stack
